@@ -1,5 +1,21 @@
 {
     "formulas": {
+        "addition": {
+            "variables": ["a", "b"],
+            "formula": "a + b"
+        },
+        "subtraction": {
+            "variables": ["a", "b"],
+            "formula": "a - b"
+        },
+        "multiplication": {
+            "variables": ["a", "b"],
+            "formula": "a * b"
+        },
+        "division": {
+            "variables": ["a", "b"],
+            "formula": "a / b"
+        },
         "circle_area": {
             "variables": ["radius"],
             "formula": "math.pi * radius ** 2"

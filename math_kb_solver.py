@@ -154,6 +154,10 @@ if __name__ == "__main__":
     
     # First run through all example problems
     example_problems = [
+        "What is 25 plus 17?",
+        "What is 100 minus 45?",
+        "What is 12 times 8?",
+        "What is 144 divided by 12?",
         "What is the area of a circle with radius 7?",
         "Calculate 18% tip on a $95 bill",
         "Convert 75 fahrenheit to celsius",
