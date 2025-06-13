@@ -1,0 +1,77 @@
+{
+    "formulas": {
+        "circle_area": {
+            "variables": ["radius"],
+            "formula": "math.pi * radius ** 2"
+        },
+        "circle_circumference": {
+            "variables": ["radius"],
+            "formula": "2 * math.pi * radius"
+        },
+        "triangle_area": {
+            "variables": ["base", "height"],
+            "formula": "0.5 * base * height"
+        },
+        "rectangle_area": {
+            "variables": ["length", "width"],
+            "formula": "length * width"
+        },
+        "sphere_volume": {
+            "variables": ["radius"],
+            "formula": "(4/3) * math.pi * radius ** 3"
+        },
+        "cylinder_volume": {
+            "variables": ["radius", "height"],
+            "formula": "math.pi * radius ** 2 * height"
+        },
+        "simple_interest": {
+            "variables": ["principal", "rate", "time"],
+            "formula": "principal * rate * time"
+        },
+        "compound_interest": {
+            "variables": ["principal", "rate", "time"],
+            "formula": "principal * (1 + rate) ** time"
+        },
+        "percentage": {
+            "variables": ["value", "percent"],
+            "formula": "value * (percent / 100)"
+        },
+        "tip_calculation": {
+            "variables": ["bill", "tip_percent"],
+            "formula": "bill * (tip_percent / 100)"
+        },
+        "distance_speed_time": {
+            "variables": ["speed", "time"],
+            "formula": "speed * time"
+        },
+        "kinetic_energy": {
+            "variables": ["mass", "velocity"],
+            "formula": "0.5 * mass * velocity ** 2"
+        },
+        "force": {
+            "variables": ["mass", "acceleration"],
+            "formula": "mass * acceleration"
+        },
+        "fahrenheit_to_celsius": {
+            "variables": ["fahrenheit"],
+            "formula": "(fahrenheit - 32) * 5 / 9"
+        },
+        "celsius_to_fahrenheit": {
+            "variables": ["celsius"],
+            "formula": "celsius * 9 / 5 + 32"
+        }
+    },
+    "constants": {
+        "pi": 3.14159265359,
+        "e": 2.71828182846,
+        "gravity": 9.81,
+        "speed_of_light": 299792458,
+        "golden_ratio": 1.61803398875
+    },
+    "conversions": {
+        "miles_to_kilometers": 1.609344,
+        "feet_to_meters": 0.3048,
+        "pounds_to_kilograms": 0.453592,
+        "inches_to_centimeters": 2.54
+    }
+} 
