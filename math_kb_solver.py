@@ -1,4 +1,3 @@
-# math_kb_solver.py
 import openai
 import json
 import math

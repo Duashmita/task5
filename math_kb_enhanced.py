@@ -1,5 +1,3 @@
-# kb_utils.py - Helper functions for KB interaction
-
 class KBQueryHelper:
     def __init__(self, prolog_instance):
         self.prolog = prolog_instance
