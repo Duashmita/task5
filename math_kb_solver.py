@@ -152,15 +152,44 @@ class MathKBSolver:
 if __name__ == "__main__":
     solver = MathKBSolver()
     
-    test_problems = [
+    # First run through all example problems
+    example_problems = [
         "What is the area of a circle with radius 7?",
         "Calculate 18% tip on a $95 bill",
-        "Convert 75 fahrenheit to celsius", 
+        "Convert 75 fahrenheit to celsius",
         "What is the volume of a sphere with radius 4?",
         "Calculate simple interest: $1000 at 5% for 3 years",
         "What is the value of pi?"
     ]
     
-    for problem in test_problems:
+    print("🤖 Welcome to the Math Problem Solver!")
+    print("First, let's see some example problems:")
+    print("=" * 60)
+    
+    for problem in example_problems:
         solver.solve_with_kb(problem)
-        print("\n" + "="*60 + "\n")
+        print("\n" + "="*60)
+    
+    print("\nNow you can enter your own problems!")
+    print("Type 'exit' to quit or 'examples' to see the example problems again")
+    print("=" * 60)
+    
+    while True:
+        user_input = input("\nEnter your math problem: ").strip()
+        
+        if user_input.lower() == 'exit':
+            print("Goodbye! 👋")
+            break
+        elif user_input.lower() == 'examples':
+            print("\nExample problems:")
+            for i, problem in enumerate(example_problems, 1):
+                print(f"{i}. {problem}")
+            continue
+        elif user_input.isdigit() and 1 <= int(user_input) <= len(example_problems):
+            # If user enters a number, show that example
+            print(f"\nExample {user_input}: {example_problems[int(user_input)-1]}")
+            continue
+        
+        if user_input:
+            solver.solve_with_kb(user_input)
+            print("\n" + "="*60)
